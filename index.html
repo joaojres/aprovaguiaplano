@@ -6,11 +6,100 @@
     <title>Aprova Guia</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+
+        body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: #5a5a5a;
+        }
+
+
+        /* CUSTOMIZE THE CAROUSEL
+        -------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 15rem;
+        }
+
+
+        /* MARKETING CONTENT
+        -------------------------------------------------- */
+
+        /* Center align the text within the three columns below the carousel */
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* rtl:begin:ignore */
+        .marketing .col-lg-4 p {
+            margin-right: .75rem;
+            margin-left: .75rem;
+        }
+
+        /* rtl:end:ignore */
+
+
+        /* Featurettes
+        ------------------------- */
+
+        .featurette-divider {
+            margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+        }
+
+        /* Thin out the marketing headings */
+        /* rtl:begin:remove */
+        .featurette-heading {
+            letter-spacing: -.05rem;
+        }
+
+        /* rtl:end:remove */
+
+        /* RESPONSIVE CSS
+        -------------------------------------------------- */
+
+        @media (min-width: 40em) {
+            /* Bump up size of carousel content */
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+
+    </style>
 </head>
 <body>
 
 <main role="main">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand fs-5" href="#">Aprova Guia</a>
             <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -39,7 +128,10 @@
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>
                 <div class="carousel-caption text-start">
-                    <h1>Transforme seus sonhos em realidade!</h1>
+                    <h1 class="d-none d-lg-block">Transforme seus sonhos em realidade!</h1>
+                    <h2 class="d-none d-md-block d-lg-none">Transforme seus sonhos em realidade!</h2>
+                    <h3 class="d-none d-sm-block d-md-none">Transforme seus sonhos em realidade!</h3>
+                    <h4 class="d-block d-sm-none">Transforme seus sonhos em realidade!</h4>
                     <p>Com nossas dicas de estudo, você estará preparado para qualquer desafio.</p>
                 </div>
             </div>
@@ -49,7 +141,10 @@
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>
                 <div class="carousel-caption">
-                    <h1>Estude com eficiência</h1>
+                    <h1 class="d-none d-lg-block">Estude com eficiência</h1>
+                    <h2 class="d-none d-md-block d-lg-none">Estude com eficiência</h2>
+                    <h3 class="d-none d-sm-block d-md-none">Estude com eficiência</h3>
+                    <h4 class="d-block d-sm-none">Estude com eficiência</h4>
                     <p>Trace seu plano, reveja suas metas e otimize seu estudo.</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="/saibamais">Saiba mais</a></p>-->
                 </div>
@@ -60,7 +155,10 @@
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>
                 <div class="carousel-caption text-end">
-                    <h1>Sucesso ao seu alcance</h1>
+                    <h1 class="d-none d-lg-block">Sucesso ao seu alcance</h1>
+                    <h2 class="d-none d-md-block d-lg-none">Sucesso ao seu alcance</h2>
+                    <h3 class="d-none d-sm-block d-md-none">Sucesso ao seu alcance</h3>
+                    <h4 class="d-block d-sm-none">Sucesso ao seu alcance</h4>
                     <p>Dicas acessíveis para todos os estudantes.</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="/dicas">Veja nossas dicas</a></p>-->
                 </div>
@@ -122,7 +220,7 @@
         <hr class="featurette-divider">
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-bottom" style="height:30px;">
+    <nav class="navbar navbar-expand navbar-dark bg-primary fixed-bottom" style="height:30px;">
         <div class="container-fluid">
             <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseBottom"
                     aria-controls="navbarCollapseBottom" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,7 +229,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapseBottom">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.instagram.com/aprovaguia/" target="_blank" title="Instagram">
+                        <a class="nav-link" href="https://www.instagram.com/aprovaguia/" target="_blank"
+                           title="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
